@@ -31,4 +31,3 @@ jobs:
           IMAGE=ghcr.io/$(echo "$GITHUB_REPOSITORY" | tr A-Z a-z):${GITHUB_SHA:0:7}
           docker tag fraud-scorer:ci "$IMAGE"
           docker push "$IMAGE"
-          
